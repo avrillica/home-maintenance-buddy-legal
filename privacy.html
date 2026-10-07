@@ -17,18 +17,20 @@
 </head>
 <body>
 <h1>Privacy Policy — Home Maintenance Buddy</h1>
-<p class="updated">Last updated: August 2026</p>
+<p class="updated">Last updated: October 2026</p>
 
-<p>Home Maintenance Buddy is designed to work fully offline. The information below only applies to the optional features you choose to turn on (signing in, cloud backup, Household Sharing).</p>
+<p>Home Maintenance Buddy is designed to work fully offline. The information below only applies to the optional features you choose to turn on (signing in, cloud backup, Household Sharing, AI Assist, Smart Sticker Scan).</p>
 
 <h2>What we collect</h2>
 <ul>
 <li><strong>Account info:</strong> if you create an account, your email address and password (or Google account identifier) are handled by our backend provider, Supabase, to sign you in.</li>
-<li><strong>Profile info (optional):</strong> phone number and home address, only if you choose to enter them. Phone number is used only to label local notification style — it is not sent anywhere or used for real SMS.</li>
+<li><strong>Profile info (optional):</strong> display name, phone number, and home address, only if you choose to enter them. If you're signed in, all three are stored in your Supabase account. Display name is shown to other members of any household you join or create. Phone number is also used to label local notification style on your own device — it is not used for real SMS. Home address is not shown to anyone else.</li>
 <li><strong>Home data:</strong> rooms, appliances, service history, and achievements you enter. This stays on your device unless you turn on cloud backup, in which case it's stored in your Supabase account so it can sync across your devices.</li>
-<li><strong>Photos and documents:</strong> manuals and receipts you attach stay on your device only. They are never uploaded unless you explicitly tap "Back Up Documents to Cloud."</li>
+<li><strong>Appliance label scanning (Smart Sticker Scan):</strong> when you scan an appliance's spec sticker, the app reads the text off the photo on your device using on-device text recognition — the photo itself is never uploaded for this. If you've added your own Claude API key in Settings, that extracted text (not the photo) is then sent to Anthropic's Claude API to identify the brand, model, serial number, and power specs. This happens automatically each time you use the scan feature with a Claude key configured — it is separate from cloud backup, below, and isn't gated behind a separate upload confirmation.</li>
+<li><strong>AI Assist (Gold tier):</strong> if you use AI Assist to draft a task or ask a question, the text you type is sent to whichever AI provider you've selected in Settings (Claude, Gemini, or OpenAI), using your own API key for that provider. Nothing else about your home is included automatically. AI-generated drafts and answers can be wrong — see the in-app disclaimer and our Terms of Service.</li>
+<li><strong>Photos and documents:</strong> appliance photos, manuals, and receipts you attach stay on your device only, and are never uploaded unless you explicitly tap "Back Up Documents to Cloud." (This is separate from Smart Sticker Scan above, which can send extracted text automatically.)</li>
 <li><strong>Purchase records:</strong> if you buy a one-time upgrade, Google Play handles the payment. We store a record of the purchase (not your payment details) to unlock the features you paid for.</li>
-<li><strong>Household data:</strong> if you join or create a household, the members of that household can see the shared home data (rooms, appliances, service history) for that household.</li>
+<li><strong>Household data:</strong> if you join or create a household, the members of that household can see the shared home data (rooms, appliances, service history) and each other's display name for that household.</li>
 <li><strong>Advertising:</strong> free-tier screens show banner ads served by Google AdMob. AdMob may collect device/advertising identifiers to serve ads; paid-tier accounts do not see ads.</li>
 </ul>
 
